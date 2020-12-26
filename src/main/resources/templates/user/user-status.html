@@ -116,23 +116,23 @@
                 <div class="blog_left_sidebar">
 
 
-                    <th:block th:each="status:${publicStatusList}">
-                    <article class="blog_item">
-                        <div class="blog_item_img">
+                    <th:block th:each="status:${privateStatusList}">
+                        <article class="blog_item">
+                            <div class="blog_item_img">
 
-                        </div>
+                            </div>
 
-                        <div class="blog_details">
-                            <a class="d-inline-block" href="single-blog.html">
-                                <h2 >Google inks pact for new 35-storey office</h2>
-                            </a>
-                            <p th:text="${status.status}"></p>
-                            <ul class="blog-info-link">
-                                <li><a href="#"><i class="fa fa-map-marker"></i><b th:text="${status.location}"></b></a></li>
+                            <div class="blog_details">
+                                <a class="d-inline-block" href="single-blog.html">
+                                    <h2 >Google inks pact for new 35-storey office</h2>
+                                </a>
+                                <p th:text="${status.status}"></p>
+                                <ul class="blog-info-link">
+                                    <li><a href="#"><i class="fa fa-map-marker"></i><b th:text="${status.location}"></b></a></li>
 
-                            </ul>
-                        </div>
-                    </article>
+                                </ul>
+                            </div>
+                        </article>
                     </th:block>
 
 

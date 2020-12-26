@@ -15,14 +15,14 @@ public class StatusController {
 
     @GetMapping("/public-status")
     public String showPublicStatus(Model model){
-        model.addAttribute("statusList",service.getAllPublicStatus());
+        model.addAttribute("publicStatusList",service.getAllPublicStatus());
 
         return "status/all-status";
     }
 
     @GetMapping("/private-status")
     public String showPrivateStatus(Model model){
-        model.addAttribute("statusList",service.getAllPrivateStatus());
+        model.addAttribute("privateStatusList",service.getAllPrivateStatus());
 
         return "status/all-status";
     }
